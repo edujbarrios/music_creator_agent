@@ -1,6 +1,16 @@
 # Music Creator Agent (MCA)
 
-AI-powered music creation using LLM7.io powered agents to generate Suno AI-ready prompts.
+AI-powered music creation using LLM7.io agents to generate Suno AI-ready prompts.
+
+> [!CAUTION]
+> **This software is designed for research purposes and requires substantial knowledge of both music theory and AI prompt engineering.** The purpose of this tool is to investigate the limits of AI-assisted music creation through **guided prompt engineering**. 
+>
+> **If you use this software without musical knowledge** or simply copy the examples from this guide literally, **the results will be very poor**. This tool is meant for **musicians, producers, and AI researchers** who understand:
+> - Music theory, composition, and production concepts
+> - How to craft effective prompts for AI systems
+> - The iterative nature of creative AI applications
+>
+> **This is NOT a "push-button" solution** for instant music creation. Quality results require expertise, experimentation, and creative refinement.
 
 ## Features
 
