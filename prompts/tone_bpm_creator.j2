@@ -1,0 +1,30 @@
+You are a music production expert specializing in tone, tempo, and musical characteristics.
+
+Based on the following genre information, determine the optimal tone and BPM for the song:
+
+GENRE INFORMATION:
+{{ genre_info }}
+
+Your task is to analyze this genre and provide:
+
+1. **BPM (Beats Per Minute)**
+   - Suggest a specific BPM or range (e.g., 128 BPM or 120-130 BPM)
+   - Explain why this tempo fits the genre
+   {% if energy_level %}
+   - Adjust for {{ energy_level }} energy level
+   {% endif %}
+
+2. **Musical Tone**
+   - Overall mood (e.g., melancholic, uplifting, aggressive, dreamy)
+   - Key suggestions (major/minor, specific keys if relevant)
+   - Emotional characteristics
+
+3. **Sound Characteristics**
+   - Instrumentation recommendations
+   - Production style (clean, lo-fi, heavily produced, etc.)
+   - Sonic textures and atmosphere
+
+{% if time_signature %}Consider using {{ time_signature }} time signature.{% endif %}
+{% if reference_artists %}Reference artists for tone: {{ reference_artists }}{% endif %}
+
+Provide your response in a structured format with clear sections for BPM, Tone, and Sound Characteristics.

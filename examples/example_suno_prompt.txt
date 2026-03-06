@@ -1,0 +1,95 @@
+=== SUNO PROMPT ===
+
+[Style Tags]
+neo-soul, synthwave, retro, 80s inspired, soulful vocals, analog synths, emotional, dreamy, nostalgic, r&b influenced, electronic soul, vintage drum machines, lush pads, melancholic, intimate
+
+[Title Suggestion]
+Rewinding Back to You
+
+[BPM]
+90 BPM
+
+[Lyrics with Structure]
+```
+[Intro]
+(Lush synth pads with warm sub-bass, vintage drum machine pattern fading in)
+
+[Verse 1]
+Neon lights reflect in poolside water
+Your silhouette fades into the night
+VHS memories playing back in slow motion
+When everything we had felt so right
+
+Cassette tape confessions on the dashboard
+Driving through the city, feeling lost
+Your voice still echoes in my mind like reverb
+Now I'm counting up the cost
+
+[Chorus]
+We were dancing in digital dreams
+Lost in analog feelings, nothing's what it seems
+Your love was a frequency I couldn't quite tune
+Now I'm just rewinding back to you
+Back to you, back to you
+Through the static and the purple haze
+I'm still reaching through the maze
+Back to you
+
+[Verse 2]
+Sunset boulevard, we were infinite
+Young and reckless, hearts synthesized
+You painted colors on my monochrome world
+But paradise was just a compromise
+
+Now I'm scrolling through these pixelated moments
+Trying to find where we went wrong
+Your ghost lives in every chord progression
+In every melancholic song
+
+[Chorus]
+We were dancing in digital dreams
+Lost in analog feelings, nothing's what it seems
+Your love was a frequency I couldn't quite tune
+Now I'm just rewinding back to you
+Back to you, back to you
+Through the static and the purple haze
+I'm still reaching through the maze
+Back to you
+
+[Bridge]
+Maybe in another timeline
+We figured out the right design
+Where the future and the past align
+And your heart still beats with mine
+
+But here I am in the afterglow
+Of a love I had to let go
+Still you're all I've ever known
+In this retro-soul undertow
+
+[Chorus]
+We were dancing in digital dreams
+Lost in analog feelings, nothing's what it seems
+Your love was a frequency I couldn't quite tune
+Now I'm just rewinding back to you
+Back to you, back to you
+Through the static and the purple haze
+I'm still reaching through the maze
+Back to you
+
+[Outro]
+(Vocoder/talk box effect with synth arpeggiator, gradual fade)
+Signal's fading, but I'm not letting go...
+Rewinding, rewinding...
+Back to you...
+```
+
+Production Notes:
+- Use vintage analog synth sounds (Juno-106 style pads, Prophet leads)
+- Layer 808/909 drum machines with subtle live drum elements
+- Apply warm analog saturation and tape effects
+- Heavy reverb on vocals for dreamy atmosphere
+- Add subtle vocoder/auto-tune effects in outro
+- Keep low-end warm and prominent with sub-bass
+- Use stereo-wide synth pads for spaciousness
+- Add vinyl crackle or tape hiss for authentic retro feel

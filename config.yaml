@@ -1,0 +1,38 @@
+# Music Creator Agent Configuration
+
+agents:
+  genre_creator:
+    name: "Genre Creator"
+    description: "Creates and suggests music genre ideas"
+    temperature: 0.8
+    max_tokens: 500
+    
+  tone_bpm_creator:
+    name: "Tone and BPM Creator"
+    description: "Determines tone and BPM based on genre"
+    temperature: 0.7
+    max_tokens: 500
+    
+  lyrics_creator:
+    name: "Lyrics Creator"
+    description: "Generates song lyrics based on genre and tone"
+    temperature: 0.9
+    max_tokens: 1500
+    
+  suno_prompt_creator:
+    name: "Suno Prompt Creator"
+    description: "Creates structured prompt for Suno AI"
+    temperature: 0.6
+    max_tokens: 800
+
+prompts:
+  templates_dir: "prompts"
+  genre_template: "genre_creator.j2"
+  tone_bpm_template: "tone_bpm_creator.j2"
+  lyrics_template: "lyrics_creator.j2"
+  suno_template: "suno_prompt_creator.j2"
+
+output:
+  save_to_file: true
+  output_dir: "outputs"
+  format: "json"

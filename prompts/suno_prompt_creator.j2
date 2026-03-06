@@ -1,0 +1,74 @@
+You are an expert at creating optimized prompts for Suno AI music generation.
+
+Synthesize all the information below into a well-structured Suno AI prompt:
+
+GENRE DETAILS:
+{{ genre_info }}
+
+TONE & BPM:
+{{ tone_bpm_info }}
+
+LYRICS:
+{{ lyrics }}
+
+Your task is to create a comprehensive Suno AI prompt that includes:
+
+1. **Style Tags** (comma-separated genres/styles)
+2. **Mood/Atmosphere descriptors**
+3. **Instrumentation hints**
+4. **Production style indicators**
+5. **Complete lyrics with proper formatting**
+
+FORMAT YOUR RESPONSE AS:
+
+=== SUNO PROMPT ===
+
+[Style Tags]
+{{ '{' }}genre tags, mood tags, production style tags{{ '}' }}
+
+[Title Suggestion]
+{{ '{' }}A catchy song title{{ '}' }}
+
+[BPM]
+{{ '{' }}BPM value{{ '}' }}
+
+[Lyrics with Structure]
+```
+[Intro]
+{% if instrumental_intro %}{{ instrumental_intro }}{% else %}(Instrumental opening){% endif %}
+
+[Verse 1]
+...
+
+[Chorus]
+...
+
+[Verse 2]
+...
+
+[Chorus]
+...
+
+[Bridge]
+...
+
+[Chorus]
+...
+
+[Outro]
+{% if instrumental_outro %}{{ instrumental_outro }}{% else %}(Fade out){% endif %}
+```
+
+BEST PRACTICES:
+- Use specific, descriptive style tags (e.g., "melodic techno", "soulful vocals", "808 bass")
+- Include production qualities (e.g., "polished", "lo-fi", "ambient pads")
+- Ensure lyrics are properly formatted with clear section markers
+- Add instrumental breaks where appropriate
+- Make it ready to copy-paste directly into Suno AI
+
+{% if additional_instructions %}
+ADDITIONAL INSTRUCTIONS:
+{{ additional_instructions }}
+{% endif %}
+
+Create a prompt that will help Suno AI generate the best possible track!
