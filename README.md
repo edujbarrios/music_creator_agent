@@ -1,6 +1,6 @@
 # Music Creator Agent (MCA)
 
-AI-powered music creation using LLM7.io agents to generate Suno AI-ready prompts.
+AI-powered music creation using LLM7.io powered agents to generate Suno AI-ready prompts.
 
 ## Features
 
@@ -12,6 +12,12 @@ Four specialized agents working in sequence:
 
 ## Setup
 
+0. Clone the repo
+```bash
+git clone https://github.com/edujbarrios/music_creator_agent.git
+cd music_creator_agent
+```
+
 1. Install dependencies:
 ```bash
 pip install -r requirements.txt
@@ -21,11 +27,12 @@ pip install -r requirements.txt
 ```bash
 cp .env.example .env
 # Edit .env and add your LLM7_API_KEY
+# Set DEFAULT_MODEL to an available model (e.g., gpt-3.5-turbo, gpt-4, claude-3-sonnet)
 ```
 
 3. Run:
 ```bash
-python run.py
+python run.py # This creates a randomg music and genre idea, see usage for more info
 ```
 
 ## Usage
@@ -49,37 +56,22 @@ python run.py --input "synthwave" --mood "nostalgic" --theme "sunset drive"
 - `--energy` - Energy level (high, medium, low)
 - `--language` - Language (default: English)
 
-## Project Structure
-
-```
-MusicCreatorAgent/
-├── MCA/                   # Main package
-│   ├── agents.py          # Agent implementations
-│   ├── llm7_client.py     # LLM7.io API client
-│   ├── orchestrator.py    # Workflow orchestration
-│   ├── utils.py           # Utilities
-│   └── MCA.py             # Main logic
-├── prompts/               # Jinja2 templates
-├── outputs/               # Generated outputs
-├── examples/              # Example outputs
-├── run.py                 # Entry point
-├── config.yaml            # Configuration
-└── requirements.txt       # Dependencies
-```
 
 ## Output
 
-Results saved in `outputs/`:
+Results of working agents will be saved in `outputs/`:
 - `music_creation_*.json` - Complete workflow results
 - `suno_prompt_*.txt` - Ready for Suno AI
+
+
+# Contributions
+
+Contributions and improvements are welcome! feel free to fork this repo and submit pull requests.
 
 ## Author
 
 **Eduardo J. Barrios**: [@edujbarrios](https://github.com/edujbarrios)
 
-## License
-
-MIT License - See LICENSE file for details
 
 
 
