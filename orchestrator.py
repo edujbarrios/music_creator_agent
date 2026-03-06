@@ -6,8 +6,8 @@ Main orchestration logic for the Music Creator Agent
 from typing import Dict, Any, Optional
 import yaml
 
-from src.agents import AgentFactory
-from src.utils import (
+from agents import AgentFactory
+from utils import (
     print_header,
     print_section,
     print_success,

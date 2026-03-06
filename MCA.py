@@ -7,8 +7,8 @@ import argparse
 import sys
 from typing import Dict, Any
 
-from src.orchestrator import MusicCreatorOrchestrator
-from src.utils import print_error, print_info
+from orchestrator import MusicCreatorOrchestrator
+from utils import print_error, print_info
 
 
 def parse_arguments():
