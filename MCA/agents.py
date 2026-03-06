@@ -8,7 +8,7 @@ from typing import Dict, Any, Optional
 from jinja2 import Environment, FileSystemLoader, Template
 import yaml
 
-from llm7_client import LLM7Client
+from MCA.llm7_client import LLM7Client
 
 
 class BaseAgent:

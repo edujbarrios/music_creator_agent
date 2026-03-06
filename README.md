@@ -1,6 +1,6 @@
 # Music Creator Agent (MCA)
 
-AI-powered music creation using LLM7.io powered agents to generate Suno AI-ready prompts.
+AI-powered music creation using LLM7.io agents to generate Suno AI-ready prompts.
 
 ## Features
 
@@ -25,19 +25,19 @@ cp .env.example .env
 
 3. Run:
 ```bash
-python MCA.py
+python run.py
 ```
 
 ## Usage
 
 Basic:
 ```bash
-python MCA.py --input "chill summer vibes"
+python run.py --input "chill summer vibes"
 ```
 
 With options:
 ```bash
-python MCA.py --input "synthwave" --mood "nostalgic" --theme "sunset drive"
+python run.py --input "synthwave" --mood "nostalgic" --theme "sunset drive"
 ```
 
 ## Options
@@ -55,14 +55,18 @@ See `EXAMPLES.md` for more examples.
 
 ```
 MusicCreatorAgent/
-├── agents.py              # Agent implementations
-├── llm7_client.py        # LLM7.io API client
-├── orchestrator.py       # Workflow orchestration
-├── utils.py              # Utilities
-├── MCA.py                # Main entry point
-├── config.yaml           # Configuration
-├── prompts/              # Jinja2 templates
-└── examples/             # Example outputs
+├── MCA/                   # Main package
+│   ├── agents.py          # Agent implementations
+│   ├── llm7_client.py     # LLM7.io API client
+│   ├── orchestrator.py    # Workflow orchestration
+│   ├── utils.py           # Utilities
+│   └── MCA.py             # Main logic
+├── prompts/               # Jinja2 templates
+├── outputs/               # Generated outputs
+├── examples/              # Example outputs
+├── run.py                 # Entry point
+├── config.yaml            # Configuration
+└── requirements.txt       # Dependencies
 ```
 
 ## Output
@@ -71,8 +75,7 @@ Results saved in `outputs/`:
 - `music_creation_*.json` - Complete workflow results
 - `suno_prompt_*.txt` - Ready for Suno AI
 
-## License
 
-MIT License
+
 
 
