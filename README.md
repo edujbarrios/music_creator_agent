@@ -49,8 +49,6 @@ python run.py --input "synthwave" --mood "nostalgic" --theme "sunset drive"
 - `--energy` - Energy level (high, medium, low)
 - `--language` - Language (default: English)
 
-See `EXAMPLES.md` for more examples.
-
 ## Project Structure
 
 ```
@@ -75,6 +73,13 @@ Results saved in `outputs/`:
 - `music_creation_*.json` - Complete workflow results
 - `suno_prompt_*.txt` - Ready for Suno AI
 
+## Author
+
+**Eduardo J. Barrios**: [@edujbarrios](https://github.com/edujbarrios)
+
+## License
+
+MIT License - See LICENSE file for details
 
 
 
