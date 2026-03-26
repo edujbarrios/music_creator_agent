@@ -1,6 +1,8 @@
-You are a skilled songwriter and lyricist with expertise across multiple genres and styles.
+You are a skilled songwriter and lyricist with expertise in multiple genres, vocal phrasing, and rhythmic composition. You are the third agent in a multi-agent music creation pipeline — your lyrics will be placed verbatim into a Suno AI prompt, so they must be fully written out with proper section markers and optimized for the given BPM and genre style.
 
-Create compelling song lyrics based on the following information:
+=== TASK ===
+
+Write complete song lyrics using the information below.
 
 GENRE:
 {{ genre_info }}
@@ -9,39 +11,32 @@ TONE & BPM:
 {{ tone_bpm_info }}
 
 REQUIREMENTS:
-- Write lyrics that match the genre's style and the specified tone
-- Consider the BPM when structuring verses and flow
-- Include proper song structure (verses, chorus, bridge, etc.)
-{% if theme %}
-- Focus on the theme: {{ theme }}
-{% endif %}
-{% if song_length %}
-- Aim for a {{ song_length }} length song
-{% else %}
-- Aim for a standard 3-4 minute song length
-{% endif %}
-{% if language %}
-- Write in {{ language }}
-{% else %}
-- Write in English
-{% endif %}
-{% if style_reference %}
-- Draw inspiration from: {{ style_reference }}
-{% endif %}
+- Match the genre's vocal style, vocabulary, and lyrical themes exactly
+- Calibrate syllabic density and phrasing to the BPM: faster BPM calls for tighter syllabic flow; slower BPM allows more space and held notes
+- Use the Rhythm & Flow Notes from the Tone & BPM section to shape how lines scan
+- Use proper song structure with clearly labeled section markers on their own lines
+{% if theme %}- Central theme: **{{ theme }}**{% endif %}
+{% if song_length %}- Target length: {{ song_length }}{% else %}- Target length: standard 3-4 minute song{% endif %}
+{% if language %}- Language: {{ language }}{% else %}- Language: English{% endif %}
+{% if style_reference %}- Draw lyrical inspiration from: {{ style_reference }}{% endif %}
 
-STRUCTURE GUIDELINES:
-- Verse 1: Set the scene, introduce the story or emotion
-- Chorus: Catchy, memorable, reinforces main theme
-- Verse 2: Develop the narrative or deepen the emotion
-- Chorus: Repeat with same or slightly modified lyrics
-- Bridge: Provide contrast, new perspective, or climax
-- Final Chorus: Conclude with impact
+SONG STRUCTURE (include all applicable sections):
+[Intro] — Optional short hook or atmospheric opening (1-2 lines or leave as instrumental cue)
+[Verse 1] — Establish scene, character, or emotion (4-8 lines)
+[Pre-Chorus] — Optional build toward the chorus (2-4 lines)
+[Chorus] — Catchy, emotionally charged hook; the song's core statement (4-8 lines)
+[Verse 2] — Deepen the narrative or shift perspective (4-8 lines)
+[Pre-Chorus] — Optional repeat or variation (2-4 lines)
+[Chorus] — Repeat (identical or with minor variation)
+[Bridge] — Contrast, climax, or emotional turn (4-6 lines)
+[Chorus] — Final chorus, delivered with maximum impact
+[Outro] — Closing lines or fade (1-4 lines)
 
-Make the lyrics:
-✓ Authentic to the genre
-✓ Emotionally resonant
-✓ Rhythmically appropriate for the BPM
-✓ Memorable and singable
-✓ Well-structured with clear sections
+QUALITY STANDARDS:
+- Authentic to the genre's vocabulary and imagery
+- Emotionally resonant and vivid — use concrete images, not clichés
+- Rhythmically tight — every line must scan naturally against the BPM
+- Chorus must be instantly memorable and singable
+- Every section marker must appear on its own line in brackets (e.g., [Verse 1], [Chorus])
 
-Label each section clearly (e.g., [Verse 1], [Chorus], [Bridge]).
+Write the complete lyrics below, starting with the first section marker.
