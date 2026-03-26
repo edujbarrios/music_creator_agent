@@ -48,24 +48,42 @@ class BaseAgent:
     
     def execute(self, prompt: str) -> str:
         """
-        Execute agent with given prompt
-        
+        Execute agent with given prompt.
+
+        If the rendered prompt contains the separator ``=== TASK ===``, the
+        text before the **first** occurrence is sent as a ``system`` message
+        (role/persona) and the text after it is sent as a ``user`` message
+        (task + context).  Only the first occurrence of the separator is used
+        for splitting (``maxsplit=1``), so any subsequent ``=== TASK ===``
+        text in the task body is preserved as-is in the user message.  This
+        split improves instruction-following in most modern LLMs.  When no
+        separator is present the entire prompt is sent as a ``user`` message
+        for backward compatibility.
+
         Args:
             prompt: Rendered prompt text
-            
+
         Returns:
             Agent response text
         """
-        messages = [
-            {"role": "user", "content": prompt}
-        ]
-        
+        separator = "=== TASK ==="
+        if separator in prompt:
+            system_part, user_part = prompt.split(separator, 1)
+            messages = [
+                {"role": "system", "content": system_part.strip()},
+                {"role": "user", "content": user_part.strip()},
+            ]
+        else:
+            messages = [
+                {"role": "user", "content": prompt}
+            ]
+
         response = self.client.chat_completion(
             messages=messages,
             temperature=self.config.get("temperature", 0.7),
             max_tokens=self.config.get("max_tokens", 1000)
         )
-        
+
         return self.client.get_completion_text(response)
 
 
